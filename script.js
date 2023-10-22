@@ -3,12 +3,11 @@ function contarVogais() {
     var count = 0;
 
     if (inputString) {
-        // Converter a string para minúsculas para garantir que todas as vogais sejam contadas
         inputString = inputString.toLowerCase();
 
         for (var i = 0; i < inputString.length; i++) {
             var char = inputString.charAt(i);
-            if ('aeiou'.includes(char)) {
+            if ('aeiouáéíóúàèìòùãẽĩõũâêîôû'.includes(char)) {
                 count++;
             }
         }
